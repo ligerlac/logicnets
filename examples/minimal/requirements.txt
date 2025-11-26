@@ -1,0 +1,5 @@
+# Minimal dependencies for LogicNets minimal example
+# For full installation instructions, see the main README
+
+torch>=1.9.0
+numpy
