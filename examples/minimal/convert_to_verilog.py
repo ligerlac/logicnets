@@ -46,8 +46,6 @@ def main():
     print("\n  Network structure:")
     for i, layer in enumerate(neq_model.module_list):
         print(f"    Layer {i}: {layer.in_features} -> {layer.out_features}")
-        print(f"      Input bitwidth: {layer.input_quant.fused_activation_quant_proxy.tensor_quant.int_quant.narrow_range}")
-        print(f"      Output bitwidth: {layer.output_quant.fused_activation_quant_proxy.tensor_quant.int_quant.narrow_range}")
 
     # Step 2: Test the PyTorch model with random input
     print("\n[Step 2] Testing PyTorch model with random input...")
